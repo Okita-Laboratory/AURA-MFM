@@ -15,8 +15,6 @@ import torch
 import torchaudio
 from matplotlib import pyplot as plt
 from tqdm import tqdm
-from decord import VideoReader
-from decord import cpu, gpu
 import logging
 torchaudio.set_audio_backend("sox_io")
 import torchvision.io as io
