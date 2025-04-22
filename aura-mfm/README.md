@@ -21,7 +21,7 @@ python pretraining.py --path_configs ./configs/train_contrastive/ego4d_imu2text.
 + 主な変更点
   * `imu_encoder_name` : "senvt"または"mw2"(imu2clip)を指定
   * `path_load_from_checkpoint` : チェックポイント(.ckpt)の読み込み
-  * `use_egohos_best_pt` : imu2clipの事前学習モデル(/home/matsuishi/aura-mfm/egohos_best.pt)の読み込み
+  * `use_egohos_best_pt` : imu2clipの事前学習モデル(egohos_best.pt)の読み込み
   * `model_size` : SENvTのモデルサイズ
   * `patch_size` : SENvTのパッチサイズ
   * `data_path` : ego-exo4dデータのパス (checkpoint/full_videos)
