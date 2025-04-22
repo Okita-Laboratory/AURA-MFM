@@ -9,6 +9,7 @@ from tqdm import tqdm
 import logging
 import numpy as np
 import sys
+import os
 
 def evaluate(
     test_set,
@@ -119,6 +120,7 @@ def evaluate(
         "num_candidates": num_candidates,
     }
     result_path += f"_candi_num_{num_candidates}.json"
+    os.makedirs(os.path.dirname(os.path.normpath(result_path)), exist_ok=True)
     with open(result_path, "w") as f:
         json.dump({"metrics": metrics, "configs": configs}, f, indent=4)
 
