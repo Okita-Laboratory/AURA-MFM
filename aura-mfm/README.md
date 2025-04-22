@@ -4,14 +4,7 @@
 ```
 conda create -n aura-mfm python=3.8
 conda activate aura-mfm
-pip install pytorch_lightning
-pip install torchaudio
-pip install torchvision
-pip install git+https://github.com/openai/CLIP.git
-pip install opencv-python
-pip install matplotlib
-pip install ffmpeg-python
-pip install pandas
+pip install -r req.txt
 ```
 
 ## 実験
