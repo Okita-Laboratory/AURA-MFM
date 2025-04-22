@@ -10,12 +10,12 @@ pip install -r req.txt
 ## 実験
 **imuとvideoのペアによる対比学習**
 ```
-python pretraining.py　--path_configs ./configs/train_contrastive/ego4d_imu2video.yaml
+python pretraining.py --path_configs ./configs/train_contrastive/ego4d_imu2video.yaml
 ```
 
 **imuとtextのペアによる対比学習**
 ```
-python pretraining.py　--path_configs ./configs/train_contrastive/ego4d_imu2text.yaml
+python pretraining.py --path_configs ./configs/train_contrastive/ego4d_imu2text.yaml
 ```
 基本的な設定はyaml内で可能です。
 + 主な変更点
