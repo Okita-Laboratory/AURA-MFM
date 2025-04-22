@@ -25,3 +25,5 @@ python pretraining.py --path_configs ./configs/train_contrastive/ego4d_imu2text.
   * `model_size` : SENvTのモデルサイズ
   * `patch_size` : SENvTのパッチサイズ
   * `data_path` : ego-exo4dデータのパス (checkpoint/full_videos)
+
+ 検索タスクを行う際は`test_only`を`True`に、`path_load_from_checkpoint`にチェックポイントのパスを指定
