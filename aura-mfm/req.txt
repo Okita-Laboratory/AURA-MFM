@@ -1,0 +1,8 @@
+pytorch_lightning
+torchaudio
+torchvision
+git+https://github.com/openai/CLIP.git
+opencv-python
+matplotlib
+ffmpeg-python
+pandas
