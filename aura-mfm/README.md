@@ -1,29 +1,28 @@
 # AURA-MFM
-現状のコードは[IMU2CLIP](https://github.com/facebookresearch/imu2clip)が基になっています。
-## 環境構築
+## Environment Setup
 ```
 conda create -n aura-mfm python=3.8
 conda activate aura-mfm
 pip install -r req.txt
 ```
 
-## 実験
-**imuとvideoのペアによる対比学習**
+## Experiments
+**Contrastive learning between IMU and video**
 ```
 python pretraining.py --path_configs ./configs/train_contrastive/ego4d_imu2video.yaml
 ```
 
-**imuとtextのペアによる対比学習**
+**Contrastive learning between IMU and text**
 ```
 python pretraining.py --path_configs ./configs/train_contrastive/ego4d_imu2text.yaml
 ```
-基本的な設定はyaml内で可能です。
-+ 主な変更点
-  * `imu_encoder_name` : "senvt"または"mw2"(imu2clip)を指定
-  * `path_load_from_checkpoint` : チェックポイント(.ckpt)の読み込み
-  * `use_egohos_best_pt` : imu2clipの事前学習モデル(egohos_best.pt)の読み込み
-  * `model_size` : SENvTのモデルサイズ
-  * `patch_size` : SENvTのパッチサイズ
-  * `data_path` : ego-exo4dデータのパス (checkpoint/full_videos)
+Most settings can be configured in the corresponding YAML files.
++ Key configuration options
+  * `imu_encoder_name`: Specify `"senvt"` or `"mw2"` (used in IMU2CLIP)
+  * `path_load_from_checkpoint`: Path to load a `.ckpt` checkpoint
+  * `use_egohos_best_pt`: Load the pretrained model `egohos_best.pt` from IMU2CLIP
+  * `model_size`: Model size for SENvT
+  * `patch_size`: Patch size for SENvT
+  * `data_path`: Path to the Ego-Exo4D data (e.g., `checkpoint/full_videos`)
 
- 検索タスクを行う際は`test_only`を`True`に、`path_load_from_checkpoint`にチェックポイントのパスを指定
+To perform retrieval tasks, set `test_only` to `True` and specify the path to the checkpoint in `path_load_from_checkpoint`.
