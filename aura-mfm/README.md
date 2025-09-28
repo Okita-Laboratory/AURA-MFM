@@ -20,6 +20,7 @@ Most settings can be configured in the corresponding YAML files.
 + Key configuration options
   * `imu_encoder_name`: Specify `"senvt"` or `"mw2"` (used in IMU2CLIP)
   * `path_load_from_checkpoint`: Path to load a `.ckpt` checkpoint
+  * `path_load_pretrained_imu_encoder`: Path to load a `.pt` encoder weights
   * `use_egohos_best_pt`: Load the pretrained model `egohos_best.pt` from IMU2CLIP
   * `model_size`: Model size for SENvT
   * `patch_size`: Patch size for SENvT
