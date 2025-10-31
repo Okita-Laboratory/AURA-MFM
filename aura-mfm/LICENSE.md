@@ -14,7 +14,7 @@ This repository includes or is derived from the following open-source projects:
 
 - **IMU2CLIP**  
   Licensed under CC BY-NC-SA 4.0  
-  Original repository: https://github.com/facebookresearch/imu2clip
+  https://github.com/facebookresearch/imu2clip
 
 - **PyTorch Lightning**  
   Licensed under Apache License 2.0  
