@@ -27,3 +27,14 @@ Most settings can be configured in the corresponding YAML files.
   * `data_path`: Path to the Ego-Exo4D data (e.g., `checkpoint/full_videos`)
 
 To perform retrieval tasks, set `test_only` to `True` and specify the path to the checkpoint in `path_load_from_checkpoint`.
+## Citation
+```
+```
+## License
+This repository is based on [IMU2CLIP](https://github.com/facebookresearch/imu2clip), which is licensed under CC BY-NC-SA 4.0.
+Therefore, this repository is also released under the
+[CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Portions of the code make use of components from:
+- [PyTorch Lightning (Apache 2.0 License)](https://github.com/Lightning-AI/lightning)
+- [CLIP (MIT License)](https://github.com/openai/CLIP)
